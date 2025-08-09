@@ -1,0 +1,10 @@
+# Import libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+pd.set_option('display.max_columns', 50)
+
+# Load dataset (replace with your own CSV file if needed)
+df = pd.read_csv('covid_sample.csv', parse_dates=['date'])
+
+# Display first 5 rows
+df.head()
