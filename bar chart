@@ -1,0 +1,7 @@
+plt.figure(figsize=(6,4))
+plt.bar(grouped['location'], grouped['new_cases'])
+plt.title('Average Daily New Cases by Country (sample)')
+plt.xlabel('Country')
+plt.ylabel('Average New Cases')
+plt.tight_layout()
+plt.show()
