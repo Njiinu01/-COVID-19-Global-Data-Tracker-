@@ -1,0 +1,9 @@
+plt.figure(figsize=(8,4))
+for loc, g in df.groupby('location'):
+    plt.plot(g['date'], g['new_cases'], label=loc)
+plt.title('Daily New Cases by Country (sample)')
+plt.xlabel('Date')
+plt.ylabel('New Cases')
+plt.legend()
+plt.tight_layout()
+plt.show()
