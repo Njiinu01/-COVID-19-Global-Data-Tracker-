@@ -1,0 +1,7 @@
+# Summary statistics
+display(df.describe())
+
+# Group by location and compute average new cases
+grouped = df.groupby('location')['new_cases'].mean().reset_index().sort_values('new_cases', ascending=False)
+print('\nAverage new_cases per location:')
+print(grouped)
