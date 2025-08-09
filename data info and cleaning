@@ -1,0 +1,13 @@
+# Check data info and missing values
+print(df.info())
+print('\nMissing values per column:')
+print(df.isnull().sum())
+
+# Drop rows with missing values
+df = df.dropna()
+
+# Convert location to category
+df['location'] = df['location'].astype('category')
+
+# Show cleaned data head
+df.head()
