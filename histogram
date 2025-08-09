@@ -1,0 +1,7 @@
+plt.figure(figsize=(6,4))
+plt.hist(df['new_cases'], bins=8)
+plt.title('Distribution of Daily New Cases (sample)')
+plt.xlabel('New Cases')
+plt.ylabel('Frequency')
+plt.tight_layout()
+plt.show()
